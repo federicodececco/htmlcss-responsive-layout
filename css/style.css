@@ -86,12 +86,7 @@ h2 {
   font-weight: 400;
   margin-bottom: 0.8375rem;
 }
-h3 {
-  color: #4e3969;
-  font-size: 1.8rem;
-  display: inline-block;
-  margin-bottom: 2.25rem;
-}
+
 h4 {
   font-size: 1.5rem;
   padding-bottom: 2rem;
@@ -112,7 +107,8 @@ h6 {
   cursor: pointer;
   border-radius: 40%;
   font-size: 1.875rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .btn-large {
@@ -161,6 +157,15 @@ header h1 {
 main {
   padding: 0 2rem;
 }
+.name h1 {
+  color: #4e3969;
+  font-size: 2.8rem;
+  display: inline-block;
+  margin-bottom: 2.25rem;
+}
+.name h1:last-of-type {
+  display: none;
+}
 .name div:first-child {
   color: #999999;
   padding: 1rem 0;
@@ -172,7 +177,9 @@ main {
 /* syntesis */
 
 .syntesis {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;}
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
 
 .syntesis h5 {
   display: inline;
@@ -258,10 +265,9 @@ footer {
   .container {
     max-width: 56.25rem;
   }
-  .name span {
+  .name h1:last-of-type {
     display: inline;
     color: #4e3969;
-    font-size: 1.75rem;
   }
   .syntesis ul {
     display: flex;
