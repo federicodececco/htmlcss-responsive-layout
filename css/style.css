@@ -26,6 +26,9 @@
 .img-fluid {
   max-width: 100%;
 }
+img {
+  width: 100%;
+}
 
 /*----------------
     LAYOUT
@@ -72,8 +75,13 @@ h1 {
 }
 h3 {
   color: #4e3969;
-  font-size: 1.75rem;
+  font-size: 1.8rem;
   display: inline-block;
+  margin-bottom: 2.25rem;
+}
+h4 {
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 /*----------------
@@ -115,7 +123,6 @@ header h1 {
 main {
   padding: 0 2rem;
 }
-
 .name div:first-child {
   color: #999999;
   padding: 1rem 0;
@@ -123,6 +130,30 @@ main {
 .name span {
   display: none;
 }
+
+/* syntesis */
+
+.syntesis h5 {
+  display: inline;
+}
+ul {
+  list-style: none;
+}
+.syntesis li {
+  margin-top: 0.8rem;
+}
+.syntesis > div:first-of-type {
+  background-color: #fff;
+}
+.syntesis > div:last-of-type {
+  background-color: #fff;
+  padding: 3rem 2rem;
+}
+.syntesis span,
+.syntesis h5 {
+  font-size: 1.25rem;
+}
+
 /*----------------
     FOOTER
 ------------------*/
@@ -145,10 +176,40 @@ main {
     color: #4e3969;
     font-size: 1.75rem;
   }
+  .syntesis ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .syntesis li {
+    width: calc((100% / 3));
+    padding-left: 1rem;
+  }
 }
 
 @media screen and (min-width: 62rem) {
   .container {
     max-width: 86.875rem;
+  }
+  .syntesis span,
+  .syntesis h5 {
+    font-size: 1rem;
+  }
+  .syntesis {
+    display: flex;
+  }
+
+  .syntesis > div:first-of-type {
+    width: 70%;
+  }
+  .syntesis > div:nth-of-type(2) {
+    width: 30%;
+  }
+  .syntesis ul {
+    display: block;
+  }
+  .syntesis li {
+    width: 100%;
+    padding-left: 0;
   }
 }
