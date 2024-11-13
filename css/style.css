@@ -31,11 +31,7 @@
     LAYOUT
 ------------------*/
 .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  /* padding-left: 20px;
-    padding-right: 20px; */
+  margin: auto;
 }
 
 .row {
@@ -74,6 +70,11 @@ body {
 h1 {
   font-size: 3.125rem;
 }
+h3 {
+  color: #4e3969;
+  font-size: 1.75rem;
+  display: inline-block;
+}
 
 /*----------------
     BUTTONS
@@ -106,11 +107,22 @@ header h1 {
   padding: 1.25rem 2rem;
   text-shadow: 0.0625rem 0.0625rem 0.125rem #333;
   font-family: "Nerko One", cursive;
+  margin-bottom: 1rem;
 }
 /*----------------
     MAIN
 ------------------*/
+main {
+  padding: 0 2rem;
+}
 
+.name div:first-child {
+  color: #999999;
+  padding: 1rem 0;
+}
+.name span {
+  display: none;
+}
 /*----------------
     FOOTER
 ------------------*/
@@ -124,5 +136,19 @@ header h1 {
 @media screen and (min-width: 48rem) {
   header h1 {
     text-align: left;
+  }
+  .container {
+    max-width: 56.25rem;
+  }
+  .name span {
+    display: inline;
+    color: #4e3969;
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  .container {
+    max-width: 86.875rem;
   }
 }
