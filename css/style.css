@@ -1,3 +1,10 @@
+:root{
+  --mainColor:#ff9614;
+  --footerColor:#7c69a4;
+}
+
+
+
 /*----------------
     DEBUG
 ------------------*/
@@ -30,11 +37,11 @@ img {
   width: 100%;
 }
 hr {
-  background-color: #ff9614;
+  background-color: var(--mainColor);
   margin-bottom: 0.8375rem;
-  border-color: #ff9614;
+  border-color: var(--mainColor);
   height: 1px;
-  color: #ff9614;
+  color:  var(--mainColor);
   width: 5rem;
 }
 
@@ -110,6 +117,10 @@ h6 {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
+.btn:hover{
+  background-color: #e5e5e5 ;
+  transition: 0.3s ease;
+}
 
 .btn-large {
   padding: 10px 20px;
@@ -150,6 +161,10 @@ header h1 {
   text-shadow: 0.0625rem 0.0625rem 0.125rem #333;
   font-family: "Nerko One", cursive;
   margin-bottom: 1rem;
+}
+header{
+  position: sticky;
+  top: 0;
 }
 /*----------------
     MAIN
@@ -235,7 +250,7 @@ ul {
     FOOTER
 ------------------*/
 footer {
-  background-color: #7c69a4;
+  background-color: var(--footerColor);
 }
 .foot {
   color: white;
@@ -342,7 +357,7 @@ footer {
     font-weight: bolder;
   }
   .btn {
-    padding: 0.775rem 2rem;
+    padding: 0.775rem 3rem;
     border-radius: 100px;
     font-size: 0.8rem;
   }
