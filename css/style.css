@@ -2,92 +2,111 @@
     DEBUG
 ------------------*/
 .debug .container {
-    border: 2px dashed blueviolet;
+  border: 2px dashed blueviolet;
 }
 
 .debug .row .col {
-    border: 2px dashed lightcoral;
-    background-color: rgba(240, 128, 128, 0.2);
-    min-height: 200px;
+  border: 2px dashed lightcoral;
+  background-color: rgba(240, 128, 128, 0.2);
+  min-height: 200px;
 }
 
 /*----------------
     RESET
 ------------------*/
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /*----------------
     COMMONS
 ------------------*/
 .img-fluid {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 /*----------------
     LAYOUT
 ------------------*/
 .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    /* padding-left: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 20px;
     padding-right: 20px; */
 }
 
 .row {
-    display: flex;
+  display: flex;
 }
 
 .gap-10 {
-    gap: 10px;
+  gap: 10px;
 }
 .gap-20 {
-    gap: 20px;
+  gap: 20px;
 }
 .gap-30 {
-    gap: 30px;
+  gap: 30px;
 }
 
 .col {
-    flex-grow: 1;
+  flex-grow: 1;
+}
+body {
+  background-color: #f6f5f3;
 }
 
 /*----------------
     TYPOGRAPHY
 ------------------*/
 body {
-    font-family: "Roboto", serif;
+  font-family: "Montserrat", helvetica, serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.nerko-one-regular {
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  font-size: 3.125rem;
 }
 
 /*----------------
     BUTTONS
 ------------------*/
 .btn {
-    background-color: transparent;
-    font-family: inherit;
-    border: none;
-    padding: 6px 12px;
-    cursor: pointer;
+  background-color: transparent;
+  font-family: inherit;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
 }
 
 .btn-large {
-    padding: 10px 20px;
-    font-size: 16px;
+  padding: 10px 20px;
+  font-size: 16px;
 }
 
 .btn-primary {
-    background-color: lightcoral;
-    color: #fff;
+  background-color: lightcoral;
+  color: #fff;
 }
 
 /*----------------
     HEADER
 ------------------*/
-
+header h1 {
+  color: #ff9614;
+  text-align: center;
+  background-color: #fff;
+  padding: 1.25rem 2rem;
+  text-shadow: 0.0625rem 0.0625rem 0.125rem #333;
+  font-family: "Nerko One", cursive;
+}
 /*----------------
     MAIN
 ------------------*/
@@ -95,3 +114,15 @@ body {
 /*----------------
     FOOTER
 ------------------*/
+
+/*---------------------------
+
+    Responsive
+
+------------------------------*/
+
+@media screen and (min-width: 48rem) {
+  header h1 {
+    text-align: left;
+  }
+}
