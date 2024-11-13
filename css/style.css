@@ -29,6 +29,14 @@
 img {
   width: 100%;
 }
+hr {
+  background-color: #ff9614;
+  margin-bottom: 0.8375rem;
+  border-color: #ff9614;
+  height: 1px;
+  color: #ff9614;
+  width: 5rem;
+}
 
 /*----------------
     LAYOUT
@@ -72,6 +80,11 @@ body {
 }
 h1 {
   font-size: 3.125rem;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 0.8375rem;
 }
 h3 {
   color: #4e3969;
@@ -189,6 +202,12 @@ ul {
   display: none;
 }
 
+/* recpie */
+
+.recipe div:last-child {
+  line-height: 1.9rem;
+}
+
 /*----------------
     FOOTER
 ------------------*/
@@ -233,6 +252,14 @@ ul {
   }
   .social ul {
     margin: 3rem 0;
+  }
+
+  /* recipe */
+
+  .recipe img {
+    float: left;
+    max-width: 30%;
+    margin-right: 0.8rem;
   }
 }
 
