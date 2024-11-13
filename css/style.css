@@ -82,7 +82,7 @@ h1 {
   font-size: 3.125rem;
 }
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 400;
   margin-bottom: 0.8375rem;
 }
@@ -95,6 +95,10 @@ h3 {
 h4 {
   font-size: 1.5rem;
   padding-bottom: 2rem;
+}
+h6 {
+  font-size: 1rem;
+  padding-bottom: 1rem;
 }
 
 /*----------------
@@ -211,6 +215,28 @@ ul {
 /*----------------
     FOOTER
 ------------------*/
+footer {
+  background-color: #7c69a4;
+}
+.foot {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.875rem 1.25rem;
+  gap: 1rem;
+}
+.foot ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.foot a {
+  color: white;
+}
 
 /*---------------------------
 
@@ -302,5 +328,20 @@ ul {
   }
   .social ul {
     margin: 2rem 0;
+  }
+
+  /* footer */
+
+  .foot {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: left;
+    padding: 1.875rem 1.25rem;
+    font-size: 0.675rem;
+  }
+  h6 {
+    font-size: .775rem;
+    padding-bottom: 0.3rem;
   }
 }
