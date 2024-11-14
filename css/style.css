@@ -189,6 +189,7 @@ main {
   display: none;
 }
 
+
 /* syntesis */
 
 .syntesis {
@@ -215,6 +216,9 @@ ul {
 .syntesis span,
 .syntesis h5 {
   font-size: 1.25rem;
+}
+.syntesis img{
+  display: block;
 }
 
 /* social and banner */
